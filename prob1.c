@@ -18,13 +18,7 @@ int main()
 	char pathname[] = "Catalog1";
 	int mode = 0777;
 	mkdir (pathname, mode);
-	/* DIR *dp;
-	 dp = opendir(pathname);
-	 if (dp==NULL)
-	 {
-		printf("Sorry, I can't open the directory %s\n", pathname);
-		exit (1);
-	}*/
+
 	int change_dir;
 	change_dir = chdir (pathname);
 
